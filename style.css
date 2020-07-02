@@ -1,6 +1,10 @@
 body {
-    font-family: 'Heebo', sans-serif;
+    /* font-family: 'Heebo', sans-serif; */
+    font-family: 'Arial (Hebrew)', Arial;
     direction: rtl;
     text-align: right;
 }
 
+.flex {
+    display: flex;
+}
