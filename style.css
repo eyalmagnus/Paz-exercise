@@ -86,7 +86,7 @@ height: 54px;
 }
 
 #headerNav {
-    background-color: #909090;
+    background-image: linear-gradient(#909090 85%,#bbb );
 }
 
 .dropdown {
@@ -96,8 +96,11 @@ height: 54px;
 .dropdown-content {
     display: none;
     position: absolute;
-background-color: #909090;
+    background-color: #909090;
 top: 35px;
+}
+.dropdown-content > a:first-of-type {
+    background-image: linear-gradient(#bbb,#909090 85%);
 }
 
 li > a {
@@ -121,6 +124,7 @@ text-decoration: underline;}
 background-color: #bbb;
 color: blue;
 text-decoration: underline;
+background-image: none;
 }
 
 
@@ -166,7 +170,7 @@ footer {
     margin: 7px;
 }
 h3 {
-    font-size: 14px;
+   font-size: 14px;
 }
 h3 + p {
     font-size: 13px;
@@ -185,8 +189,7 @@ h3 + p {
 .grayRect > a:hover {
     color: blue;
 }
-
-.grayRect > a > i {
+a > i {
     margin-right: 5px;
 font-size: 9px;
 }
@@ -196,13 +199,55 @@ font-size: 9px;
     margin-bottom: 40px;
     background-image: linear-gradient(white, #eee);
     width: 100%;
-    height: 155px;
+    height: 216px;
     display: flex;
     flex-direction: column;
-    color: black;   
+    color: #575757;   
     border: solid 2px #eee;
     border-radius: 0 20px 0 0;
     font-size: 14px;
-    align-items: center;
-    justify-content: space-evenly;
+}
+.smallCard > p {
+margin: 7px 25px;
+}
+.smallCard > .hr {
+    width: 80%;
+    margin: 0 auto;
+    border-top: 2px solid #eee;
+    display: block;
+}
+.smallCard > img {
+    width: 87%;
+    margin: 13px auto;
+}
+.smallCard > a {
+font-size: 13px;
+font-weight: normal;
+color: #777;
+align-self: flex-end;
+margin-left: 20px;
+}
+.smallCard > a > i {
+    color: #ffc400; 
+}
+.smallCard > a:hover, .smallCard > a:hover > i {
+    color: blue;
+}
+#card6 > a {
+    align-self: flex-start;
+    margin: 2px 22px;
+}
+#card6 > a:first-of-type {
+    margin-top: 15px;
+}
+#card6 > a:first-of-type > i {
+margin-right: 11px;
+}
+#card6 > img {
+    height: 168px;
+    width: 73px;
+    position: relative;
+    top: -65px;
+    right: 160px;
+    margin: 0 24px;
 }
