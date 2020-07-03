@@ -7,11 +7,41 @@ margin: 0;
     font-family: 'Arial (Hebrew)', Arial;
     direction: rtl;
     text-align: right;
+    color: #fff;
+    font-weight: bold;
 }
 
 ul {
 list-style: none;
 padding-right: 0;
+justify-content: flex-end;
+font-size: 15px;
+
+}
+
+nav > img {
+position: absolute;
+}
+
+#topNav {
+justify-content: flex-end;
+align-items: center;
+font-size: 12px;
+border: 1px dashed #ccc;
+}
+#topNav > a  {
+    text-decoration: none;
+    color: inherit;
+    margin: 10px;
+    font-size: 12px;
+}
+
+#topNav > input {
+color: black;
+
+}
+#bottomNav {
+border: 1px dashed #ccc;
 }
 
 .vl {
@@ -19,6 +49,13 @@ padding-right: 0;
     height: 21px;
     margin: 0 16px;
 }
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
 .flex {
     display: flex;
 }
@@ -34,17 +71,38 @@ padding-right: 0;
 
 .dropdown {
     position: relative;
-}
+    }
 
 .dropdown-content {
     display: none;
     position: absolute;
-background-color: #909090;}
+background-color: #909090;
+}
+
+li > a {
+text-decoration: none;
+padding: 5px;
+color: inherit;
+}
 
 .dropdown-content > a {
     text-decoration: none;
     display: inline-block;
+    padding: 0 5px;
+    color: inherit;
+    white-space: nowrap;
 }
+
 .dropdown:hover > .dropdown-content {
     display: block;
+}
+
+main {
+    color: black;
+}
+footer {
+    background-color: #909090;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
