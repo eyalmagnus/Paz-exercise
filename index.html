@@ -8,15 +8,15 @@
     </head>
     <body>
     <div id="headerNav">
-        <div id="topNav">
+        <div id="topNav"  class="flex cColumn">
             <span>English</span>
             <input type="text">
             <button type="button"></button>
         </div>
         <nav class="cColumn">
-            <div id="bottomNav">
-            <img src="" alt="">
-            <ul>
+            <div id="bottomNav" class="flex">
+            <img src="lib/paz_logo.png" alt="Paz logo">
+            <ul class="flex">
               <li>        <a href="index.html">H</a></li>
               <li class="dropdown"><a href="#">אודות</a>
                                         <div class="dropdown-content">
@@ -28,6 +28,7 @@
                                         <a href="#">הנהלת הקבוצה</a>
                                         <a href="#">פרסים והוקרה</a>
                                         </div>
+                                    </li>
                                         <div class="vl"></div>
                 <li class="dropdown"><a href="#">חטיבות</a>
                                         <div class="dropdown-content">
@@ -36,6 +37,7 @@
                                         <a href="#">תעשיות ושירותים</a>
                                         <a href="#">זיקוק</a>
                                         </div>
+                                    </li>
                                         <div class="vl"></div>
                 <li class="dropdown"><a href="#">אחריות תאגידית</a>
                                         <div class="dropdown-content">
@@ -46,6 +48,7 @@
                                         <a href="#">איכות סביבה ובטיחות</a>
                                         <a href="#">דירוג מעל</a>
                                         </div>
+                                    </li>
                                         <div class="vl"></div>
                 <li class="dropdown"><a href="#">קשרי משקיעים</a>
                                         <div class="dropdown-content">
@@ -55,6 +58,7 @@
                                         <a href="#">נתוני מניה</a>
                                         <a href="#">אסיפות כלליות</a>
                                         </div>
+                                    </li>
                                         <div class="vl"></div>
                 <li class="dropdown"><a href="#">התחנות שלנו</a>
                                         <div class="dropdown-content">
@@ -63,6 +67,7 @@
                                         <a href="#">רשימת תחנות</a>
                                         <a href="#">מועדונים</a>
                                         </div>
+                                    </li>
                                         <div class="vl"></div>
                 <li class="dropdown"><a href="#">קריירה</a>
                                         <div class="dropdown-content">
@@ -70,20 +75,22 @@
                                         <a href="#">ניהול תחנת פז</a>
                                         <a href="#">קריירה</a>
                                         </div>
+                                    </li>
                                         <div class="vl"></div>
                 <li class="dropdown"><a href="#">חדשות ומדיה</a>
                                         <div class="dropdown-content">
                                         <a href="#">פרסומות</a>
                                         <a href="#">הודעות לעיתונות</a>
                                         </div>
-                                        <div class="vl"></div>
+                                    </li>
             </ul>
             </div>
           </nav>
         </div>
-        <main>
+        <main class="cColumn">
+            <div id="bigCards" class="flex">
             <div class="bigCard" id="card1">
-                *+<div class="grayRect">
+                <div class="grayRect">
                     <h3>קמעונאות ומסחר</h3>
                     <p>במסגרת חטיבת הקו"מ של פז מתבצעת הפעילות הקמעונאית, הנדל"נית, והשיווקית של הקבוצה, שמתאפיינת בחדשנות, יעילות ומובילות. החטיבה פועלת...</p>
                     <a href="#">קרא עוד</a>
@@ -99,6 +106,8 @@
                     <p>תחת חטיבת התעשיות והשירותים של פז פועלות מספר חברות בנות, המתמחות בפיתוח, ייצור ושיווק מוצרי לוואי של נפט, ומובילות את השוק...</p>
                     <a href="#">קרא עוד</a>
                 </div></div>
+            </div>
+            <div id="smallCards" class="flex">
                 <div class="smallCard" id="card4">
                     <p>כרטיס אשראי שופרסל וכרטיס אשראי יש</p>
                     <hr>
@@ -119,8 +128,9 @@
                     <a href="#">דרום</a>
                     <img src="" alt="">
                 </div>
+            </div>
         </main>
-        <footer><div id="footerC">
+        <footer><div id="footerC" class="flex cColumn">
             <a href="#"><img src="" alt=""></a>
             <div>עמוד הבית</div><div class="vs">|</div>
             <div>מחירונים</div><div class="vs">|</div>

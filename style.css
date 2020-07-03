@@ -1,10 +1,37 @@
-body {
-    /* font-family: 'Heebo', sans-serif; */
+* {
+box-sizing: border-box;
+border: 1px dashed #ccc;
+}
+
+    body {
     font-family: 'Arial (Hebrew)', Arial;
     direction: rtl;
     text-align: right;
 }
 
+ul {
+list-style: none;
+padding-right: 0;
+}
+
 .flex {
     display: flex;
+}
+
+.cColumn {
+    width: 66%;
+    margin: auto;
+}
+
+.dropdown-content {
+    /* display: none; */
+    position: absolute;
+}
+
+.dropdown-content > a {
+    display: block;
+    text-decoration: none;
+}
+.dropdown:hover + .dropdown-content {
+    display: block;
 }
