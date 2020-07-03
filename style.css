@@ -15,12 +15,14 @@ ul {
 list-style: none;
 padding-right: 0;
 justify-content: flex-end;
+align-items: center;
 font-size: 15px;
-
+height: 100%;
 }
 
 nav > img {
 position: absolute;
+top: 30px;
 }
 
 #topNav {
@@ -28,6 +30,7 @@ justify-content: flex-end;
 align-items: center;
 font-size: 12px;
 border: 1px dashed #ccc;
+height: 54px;
 }
 #topNav > a  {
     text-decoration: none;
@@ -35,13 +38,27 @@ border: 1px dashed #ccc;
     margin: 10px;
     font-size: 12px;
 }
-
-#topNav > input {
-color: black;
-
+#topNav > input::placeholder {
+    color: black;
+    opacity: 1;
+    font-size: 12px;
+    font-family: Arial,Arial, Helvetica, sans-serif;
 }
+#topNav > input {
+    width: 132px;
+    height: 19px;
+    position: relative;
+    right: 10px;   
+}
+#searchB {
+    width: 16px;
+    height: 16px;
+    background-color: #ccc;
+}
+
 #bottomNav {
 border: 1px dashed #ccc;
+height: 54px;
 }
 
 .vl {
@@ -71,27 +88,36 @@ border: 1px dashed #ccc;
 
 .dropdown {
     position: relative;
-    }
+}
 
 .dropdown-content {
     display: none;
     position: absolute;
 background-color: #909090;
+top: 35px;
 }
 
 li > a {
 text-decoration: none;
-padding: 5px;
 color: inherit;
+height: 30px;
+padding-bottom: 35px;
 }
+li > a:hover {
+color: darkblue;
+text-decoration: underline;}
 
 .dropdown-content > a {
     text-decoration: none;
-    display: inline-block;
-    padding: 0 5px;
+    display: block;
+    padding:  5px 5px;
     color: inherit;
     white-space: nowrap;
 }
+.dropdown-content > a:hover {
+background-color: cornsilk;
+}
+
 
 .dropdown:hover > .dropdown-content {
     display: block;
