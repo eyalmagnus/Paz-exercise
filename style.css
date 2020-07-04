@@ -321,20 +321,68 @@ footer a:hover {
     margin-top: 15px;
     color: rgba(122,122,122,1);
 }
-#flat > hr {
-    margin-right: 20px;
+#flat > .hr {
+    margin: 5px 20px;
+    background-color: #ddd;
+    width: 420px;
+    height: 1px;
 }
 #cardHolder {
     margin-right: 155px;
 }
 #contctLCard {
     width: 50%;
+    height: 380px;
+    padding: 10px 20px;
+    margin: 7px 0;
 }
-#inputCard{
+#inputBlock{
     width: 80%;
     margin: auto;
+    margin-top: 7px;
+}
+.smallCard > h4 {
+color: rgb(31, 31, 163);
 }
 
-
+#contctLCard > p {
+    margin: 5px 0;
+    font-size: 13px;
+}
+#contctLCard > span {
+font-weight: normal;
+font-size: 12px;
+}
 #smallHolder {
 }
+#topInput{
+    justify-content: space-between;
+}
+#leftSideFields {
+    justify-content: space-evenly;
+    height: 110px;
+}
+#rightSideLabels {
+    height: 110px;
+    justify-content: space-evenly;
+    font-weight: normal;
+    font-size: 12px;
+}
+.button2 {
+    background-image: linear-gradient(#afebff,#008CBA);
+    color: black; 
+    border: 1px solid #73bbd3;
+    width: 50px;
+    align-self: flex-end;
+    margin-top: 7px;
+    border-radius: 0 5px 0 0;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+
+}
+  
+  .button2:hover {
+    background-image: linear-gradient(#008CBA, #afebff);
+    color: #008CBA;
+  }
