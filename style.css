@@ -84,7 +84,7 @@ height: 54px;
 }
 
 .cColumn {
-    width: 48%;
+    width: 920px;
     margin: auto;
 }
 
@@ -157,16 +157,19 @@ background-image: none;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background-size: cover; /* Resize the background image to cover the entire container */
+    background-size: cover; 
 }
 .grayRect {
     background-color: rgba(129, 129, 129, 0.9);
-    width: 85%;
+    width: 250px;
     height: 97px;
     padding: 10px;
     color: white;
     border-radius: 0 0 20px;
     margin: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 h3 {
    font-size: 14px;
@@ -178,13 +181,17 @@ h3 + p {
     margin-top: 5px;
 }
 .grayRect > a {
-    position: relative;
-    right: 177px;
-    top: -7px;
+   position: relative;
+   bottom: 7px;
+    align-self: flex-end;
     font-size: 12px;
     color: inherit;
     font-weight: normal;
 }
+#mid {
+    bottom:-7px;
+}
+
 .grayRect > a:hover {
     color: blue;
 }
@@ -210,13 +217,13 @@ font-size: 9px;
 margin: 7px 25px;
 }
 .smallCard > .hr {
-    width: 80%;
+    width: 250px;
     margin: 0 auto;
     border-top: 2px solid #eee;
     display: block;
 }
 .smallCard > img {
-    width: 87%;
+    width: 250px;
     margin: 13px auto;
 }
 .smallCard > a {
@@ -297,6 +304,10 @@ footer a:hover {
 #topSpace {
     height: 50px;
 }
+#contactTitle {
+position: relative;
+    z-index: -1;
+}
 #slab {
     background-image: linear-gradient(white, #ddd);
     display: inline-block;
@@ -318,11 +329,12 @@ footer a:hover {
     position: relative;
     font-size: 18px;
     right: 20px;
-    margin-top: 15px;
+    top: 8px;
+    margin-top: 12px;
     color: rgba(122,122,122,1);
 }
 #flat > .hr {
-    margin: 5px 20px;
+    margin: 10px 20px 5px 20px;
     background-color: #ddd;
     width: 420px;
     height: 1px;
@@ -331,7 +343,7 @@ footer a:hover {
     margin-right: 155px;
 }
 #contctLCard {
-    width: 50%;
+    width: 380px;
     height: 380px;
     padding: 10px 20px;
     margin: 7px 0;
@@ -358,13 +370,11 @@ font-size: 12px;
 #topInput{
     justify-content: space-between;
 }
-#leftSideFields {
+#leftSideFields, #rightSideLabels {
     justify-content: space-evenly;
     height: 110px;
 }
 #rightSideLabels {
-    height: 110px;
-    justify-content: space-evenly;
     font-weight: normal;
     font-size: 12px;
 }
@@ -379,10 +389,30 @@ font-size: 12px;
     font-weight: bold;
     font-size: 15px;
     color: white;
-
 }
-  
   .button2:hover {
     background-image: linear-gradient(#008CBA, #afebff);
     color: #008CBA;
   }
+  .contctSmalls {
+      height: 172px;
+      margin-right: 70px;
+    padding: 10px 20px;
+    width: 80%;
+  }
+  .contctSmalls > .hr {
+      margin: 5px 0;
+      width: 100%;
+  }
+  .contctSmalls > p {
+      font-size: 12px;
+      margin: 0;
+  }
+  .contctSmalls > p:last-child {
+      font-weight: normal;
+  }
+  .contctSmalls > a {
+align-self: flex-start;
+}
+
+
