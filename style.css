@@ -256,6 +256,9 @@ margin-right: 11px;
 li {
     margin: 0 5px;
 }
+#bSpace {
+    height: 30px;
+}
 footer {
     background-color: #909090;
     position: fixed;
