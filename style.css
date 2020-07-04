@@ -78,6 +78,10 @@ height: 54px;
 .flex {
     display: flex;
 }
+.vflex {
+    display: flex;
+    flex-direction: column;
+}
 
 .cColumn {
     width: 48%;
@@ -312,8 +316,25 @@ footer a:hover {
 }
 #flat > p {
     position: relative;
-    font-size: 20px;
+    font-size: 18px;
     right: 20px;
     margin-top: 15px;
     color: rgba(122,122,122,1);
+}
+#flat > hr {
+    margin-right: 20px;
+}
+#cardHolder {
+    margin-right: 155px;
+}
+#contctLCard {
+    width: 50%;
+}
+#inputCard{
+    width: 80%;
+    margin: auto;
+}
+
+
+#smallHolder {
 }

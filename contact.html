@@ -99,9 +99,36 @@
                 <hr>
             </div>
         </div> <!--#contactTitle-->
-    <div id="contctLCard" class="smallCard"></div>
-    <div class="smallCard contctSmalls"></div>
-    <div class="smallCard contctSmalls"></div>
+
+    <div id="cardHolder" class="flex">
+        <div id="contctLCard" class="smallCard">
+            <h4>צור קשר</h4>
+            <p>ליצירת קשר עם קשרי לקוחות אנא מלאו את הפרטיםהבאים ואנו נשמח לעמוד לרשותכם :</p>
+            <span>*השדות המסומנים בכוכבית (*) הינם שדות חובה </span>
+            <div id="inputCard" class="vflex">
+                <div id="topInput" class="flex">
+                   <div id="rightSideLabels" class="vflex"> 
+                       <label for="private">*שם פרטי</label>
+                       <label for="family">*שם משפחה</label>
+                       <label for="phone">*טלפון</label>
+                       <label for="email">*E-mail</label>
+                    </div>
+                    <div id="leftSideFields" class="vflex">
+                        <input type="text" id="private" name="private">
+                        <input type="text" id="family" name="family">
+                        <input type="tel" id="phone" name="phone">
+                        <input type="email" id="email" name="email">
+                    </div>
+                </div>
+                <textarea id="theText" name="theText" rows="4" cols="50">תוכן הפניה</textarea>
+            </div>
+        </div>
+        <div id="smallHolder" class="vflex">
+            <div class="smallCard contctSmalls"></div>
+            <div class="smallCard contctSmalls"></div>
+        </div>
+    </div>
+
     </div> <!-- #main-->
         <footer><div id="footerC" class="flex cColumn">
             <a href="#"><img src="lib/fb_icon.png" alt="facbook icon"></a><div class="vs">|</div>
