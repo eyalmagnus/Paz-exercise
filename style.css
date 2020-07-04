@@ -226,6 +226,9 @@ margin: 7px 25px;
     width: 250px;
     margin: 13px auto;
 }
+.carusel {
+    display: none;
+}
 .smallCard > a {
 font-size: 13px;
 font-weight: normal;

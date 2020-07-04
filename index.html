@@ -121,7 +121,26 @@
                 <div class="smallCard" id="card5">
                     <p>yellow click&pick;</p>
                     <div class="hr"></div>
-                    <img src="lib/250X110571325734.jpg" alt="">
+                    <img class="carusel" src="lib/250X110571325734.jpg" alt="goat">
+                    <img class="carusel" src="lib/carusel (1).jpg" alt="add">
+                    <img class="carusel" src="lib/carusel (2).jpg" alt="add">
+                    <img class="carusel" src="lib/carusel (3).jpg" alt="add">
+<script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+  var i;
+  var x = document.getElementsByClassName("carusel");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000); 
+}
+</script>
                     <a href="#">לפרטים נוספים<i class="fas fa-share-alt"></i></a>
                 </div>
                 <div class="smallCard" id="card6">
