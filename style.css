@@ -286,3 +286,34 @@ footer a:hover {
     color: blue;
     text-decoration: underline;
 }
+
+#main {
+    color: black;
+}
+#topSpace {
+    height: 50px;
+}
+#slab {
+    background-image: linear-gradient(white, #ddd);
+    display: inline-block;
+    padding: 12px 0;
+    width: 140px;
+    border-top: #aaa 1px solid;
+}
+#flat {
+    flex-direction: column;
+    display: inline-flex;
+}
+#flat > span {
+    position: relative;
+    top: -18px;
+    font-size: 12px;
+    right: 20px;
+}
+#flat > p {
+    position: relative;
+    font-size: 20px;
+    right: 20px;
+    margin-top: 15px;
+    color: rgba(122,122,122,1);
+}
